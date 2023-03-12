@@ -1,0 +1,268 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method=post enctype=multipart/form-data>
+      <input type=file name=file>
+      <input type=submit value=Upload>
+    </form>
+</body>
+</html>
+ -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Fetchers</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800;900&family=Ubuntu&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
+
+  
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+  <!-- CSS styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/uploads/styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/dd817ce703.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap styles -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <link rel="icon" href="static/images/favicon.io" type="gif" >
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand fw-bold" href="">Data Fetchers</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Upload_File</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">AboutUs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">ContactUs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">SignUp</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <!-- Title -->
+
+      <div>
+        <div class="row">
+          <div class="col-md-6";>
+            <h1 class="makeu" style="font-size:3.25rem ;line-height:1.5;">Make you visualise data in a smooth and easy manner !</h1>
+            <button type="button" class="btn btn-outline-light btn-lg Download-Button">Login</button>
+            <button style="background-color:#7F8487 ;" type="button" class="btn btn-dark btn-lg Download-Button">SignUp</button>
+          </div>
+            <div class="fade-in-image">
+              <i  class="fa-solid fa-file-csv title-image" ></i>
+            </div>
+
+
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row container-fluid">
+      <div class="featurebox col-lg-4 ">
+        <i class="pics fa-solid fa-circle-check fa-4x"></i>
+        <h3>Easy to use.</h3>
+        <p class="descript">All that to do is select and upload the file.</p>
+      </div>
+      <div class="featurebox col-lg-4 ">
+        <i class="pics fa-solid fa-paper-plane fa-4x"></i>
+        <h3>Done in Sec.</h3>
+        <p class="descript">Get great visualisations in seconds</p>
+      </div>
+      <div class="featurebox col-lg-4 ">
+        <i class="pics fa-solid fa-heart fa-4x"></i>
+        <h3>Completely Free.</h3>
+        <p class="descript">All this is a complete free thing.</p>
+      </div>
+
+
+
+    </div>
+
+
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 last-statement">
+          <h1 style="font-size: 3.25rem; display:inline ">Upload the file here </h1><h2 style="display: inline;">⬇️</h2>
+            <form method=post enctype=multipart/form-data class="choosefile">
+              <input type=file name=file>
+              <input type="text" name="label" placeholder="Class Column" autocomplete="off">
+              <!-- <input type=submit value=Upload> -->
+             <input type=submit style="text-decoration: none;color:#413F42;" value=Upload>
+            </form>
+            
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+  
+
+  <!-- Pricing -->
+
+
+  <section id="pricing">
+    <h2 style="padding: 0 0 5% 0; color:#413F42">The Team:</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/parvish-modified.png"  style="width:50%" class="people">
+          <div class="container">
+            <h2 style="color:#7F8487; font-weight: 400;">Parvish Raj</h2>
+            <p >Interests:</p>
+            <p>Articial Intelligence
+              Web Development(Backend(Flask)),
+              </p>
+            <p>parvish2004@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/sat-modified.png"  style="width:50%" class="people">
+          <div class="container">
+            <h2 style="color:#7F8487; font-weight: 400;">Sathwika Chinthala</h2>
+            <p >Interests:</p>
+            <p>Web Development(Frontend,Backend),
+              CP</p>
+            <p>chsathwi@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="/static/images/vamsi-modified.png"  style="width:50%" class="people">
+          <div class="container">
+            <h2 style="color:#7F8487; font-weight: 400;">Vamsi Katta</h2>
+            <p >Interests:</p>
+            <p>Machine Learning,
+              Web Development(Frontend,Backend),
+              CP</p>
+            <p>sunny77katta2002@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2 class="testimonial-text">It is so powerful, and I know I'm barely scraping the surface of what all it's
+            capable of. It is amazing for analyzing data, and staying organzied.</h2>
+          <img class="testimonial-image" src="/static/images/man.jpeg" alt="dog-profile">
+          <em>Rhonda R., Allahabad</em>
+        </div>
+        <div class="carousel-item">
+          <h2 class="testimonial-text">Great, I have loved the ease of building reports.I found it easy to learn and
+            easy to use from the start.</h2>
+          <img class="testimonial-image" src="/static/images/man.jpeg" alt="lady-profile">
+          <em>Mahesh Kumar, Hyderabad</em>
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <div class="container-fluid">
+     <i class="footer-image fa-brands fa-twitter fa-2x"></i>
+      <i class="footer-image fa-brands fa-facebook fa-2x"></i>
+      <i class="footer-image fa-brands fa-instagram fa-2x"></i>
+      <i class="footer-image fa-solid fa-envelope fa-2x"></i>
+
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>

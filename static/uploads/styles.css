@@ -1,0 +1,208 @@
+body{
+    font-family: "Montserrat";
+}
+.makeu{
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-family: 'Roboto Mono', monospace;
+    size: 3.5rem;
+    line-height: 1.5;
+}
+h3{
+    color: #7F8487;
+    font-family: "Montserrat-Bold";
+    font-weight: bolder;
+    font-size: 1.47rem;
+}
+h2{
+    font-family: "Montserrat-Bold";
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+}
+.navbar{
+    padding:0 0 4.5rem;
+}
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight:400;
+}
+.container-fluid{
+    padding: 3% 8% 7% 15%;
+
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+}
+.Download-Button{
+    margin: 5% 3% 5% 0;
+}
+.title-image{
+    width: 30%;
+    position:absolute;
+    right: 8%;
+    font-size: 400px;
+}
+.pics{
+    color: #4CACBC;
+}
+.pics:hover{
+    color: #7FBCD2;
+}
+.descript{
+    color: #8f8f8f;
+}
+.people{
+    border: none;
+    background-color: none;
+    size: 100px;
+}
+
+.featurebox{
+    text-align: center;
+    padding: 5%;
+}
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+.press-logo{
+    width: 10%;
+    margin: 20px 20px 50px;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+.choosefile{
+    padding: 10% 0 0 0;
+}
+.pricing-column{
+    padding: 3% 2%;
+    text-align: center;
+ }
+.footer-image{
+    padding: 1.5rem;
+}
+#features{
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#testimonials{
+   
+    text-align: center;
+    background-color: #7FBCD2;
+    color: #fff;
+}
+
+#title{
+    background-color: #7FBCD2;
+    color: #F5EFE6;
+}
+
+#pricing{
+    padding: 100px;
+}
+
+#cta{
+    background-color: #4CACBC;
+    text-align: center;
+    padding: 7% 15%;
+}
+.last-statement{
+    color: #fff;
+    
+}
+#footer{
+    text-align: center;
+    background-color: #fff;
+    color: #4CACBC;
+}
+.fade-in-image {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+@media (max-width:1000px){
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        width: 60%;
+    }
+    #title{
+        text-align: center;
+    }
+
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    border: none;
+    background-color: #fff;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+      background-color: white;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card{
+    border: none;
+  }
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+  }
+
+  
